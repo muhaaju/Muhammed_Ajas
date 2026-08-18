@@ -1,0 +1,16 @@
+{
+  "name": "Muhammed Ajas - Senior Site Reliability Engineer",
+  "short_name": "Muhammed Ajas",
+  "description": "Senior Site Reliability Engineer specializing in Kubernetes, AWS, and enterprise automation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
