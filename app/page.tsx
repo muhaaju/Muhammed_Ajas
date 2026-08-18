@@ -60,7 +60,7 @@ export default function Home() {
           
           <div className="flex flex-wrap gap-4 mb-16">
             <a 
-              href="https://www.linkedin.com/in/muhammedajas-753346109" 
+              href="https://www.linkedin.com/in/profileofajas"
               target="_blank" 
               rel="noopener noreferrer" 
               className="px-6 py-3 bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-colors"
@@ -84,9 +84,7 @@ export default function Home() {
 
           {/* Social Links */}
           <div className="flex flex-wrap gap-8 text-sm text-gray-600">
-            <a href="https://www.linkedin.com/in/muhammedajas-753346109" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">
-              Connect with me: LinkedIn ↗
-            </a>
+
             <a href="https://github.com/muhaaju" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">
               Explore with me: GitHub ↗
             </a>
@@ -766,7 +764,7 @@ export default function Home() {
                 <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                linkedin.com/in/muhammedajas-753346109
+                linkedin.com/in/profileofajas
               </p>
             </a>
 
