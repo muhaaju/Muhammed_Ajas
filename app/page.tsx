@@ -6,6 +6,7 @@ import Image from 'next/image';
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,16 @@ export default function Home() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const openLightbox = (imageSrc: string) => {
+    setLightboxImage(imageSrc);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeLightbox = () => {
+    setLightboxImage(null);
+    document.body.style.overflow = 'unset';
   };
 
   return (
@@ -112,6 +123,34 @@ export default function Home() {
         </button>
       )}
 
+
+      {/* Lightbox Modal */}
+      {lightboxImage && (
+        <div 
+          className="fixed inset-0 bg-black/95 z-[100] flex items-center justify-center p-4 cursor-pointer"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 text-white text-5xl font-light hover:text-gray-300 transition-colors z-10"
+            aria-label="Close lightbox"
+          >
+            ×
+          </button>
+          <div className="relative max-w-[95vw] max-h-[95vh] flex items-center justify-center">
+            <Image
+              src={lightboxImage}
+              alt="Full size view"
+              width={1600}
+              height={1600}
+              className="max-w-full max-h-[95vh] w-auto h-auto object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
+
+
       <div className="max-w-5xl mx-auto px-6 pt-32 pb-20">
         
         {/* Hero Section with Profile Photo */}
@@ -135,7 +174,10 @@ export default function Home() {
               </p>
             </div>
             <div className="md:col-span-4">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-800 shadow-lg shadow-emerald-500/10">
+              <div 
+                className="aspect-square rounded-2xl overflow-hidden border border-zinc-800 shadow-lg shadow-emerald-500/10 cursor-pointer hover:border-emerald-500/50 transition-colors"
+                onClick={() => openLightbox('/images/profile-main.jpg')}
+              >
                 <Image 
                   src="/images/profile-main.jpg" 
                   alt="Muhammed Ajas" 
@@ -336,7 +378,10 @@ export default function Home() {
             </div>
             
             <div className="md:col-span-4">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-gray-200">
+              <div 
+                className="aspect-square rounded-2xl overflow-hidden border border-gray-200 cursor-pointer hover:border-gray-400 transition-colors"
+                onClick={() => openLightbox('/images/profile-alt.jpg')}
+              >
                 <Image 
                   src="/images/profile-alt.jpg" 
                   alt="Muhammed Ajas - Professional" 
@@ -657,7 +702,10 @@ export default function Home() {
             </div>
             
             <div className="md:col-span-4">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-gray-200">
+              <div 
+                className="aspect-square rounded-2xl overflow-hidden border border-gray-200 cursor-pointer hover:border-gray-400 transition-colors"
+                onClick={() => openLightbox('/images/community-collage.jpg')}
+              >
                 <Image 
                   src="/images/community-collage.jpg" 
                   alt="Community Leadership Activities" 
@@ -770,7 +818,10 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="border-t border-gray-200 pt-6">
-              <div className="aspect-[3/2] rounded-lg overflow-hidden mb-4 border border-gray-200">
+              <div 
+                className="aspect-[3/2] rounded-lg overflow-hidden mb-4 border border-gray-200 cursor-pointer hover:border-gray-400 transition-colors"
+                onClick={() => openLightbox('/images/travel-collage.jpg')}
+              >
                 <Image 
                   src="/images/travel-collage.jpg" 
                   alt="World Travel Experiences" 
@@ -786,7 +837,10 @@ export default function Home() {
             </div>
 
             <div className="border-t border-gray-200 pt-6">
-              <div className="aspect-[3/2] rounded-lg overflow-hidden mb-4 border border-gray-200">
+              <div 
+                className="aspect-[3/2] rounded-lg overflow-hidden mb-4 border border-gray-200 cursor-pointer hover:border-gray-400 transition-colors"
+                onClick={() => openLightbox('/images/adventure-collage.jpg')}
+              >
                 <Image 
                   src="/images/adventure-collage.jpg" 
                   alt="Adventure Sports Activities" 
@@ -802,7 +856,10 @@ export default function Home() {
             </div>
 
             <div className="border-t border-gray-200 pt-6">
-              <div className="aspect-[3/2] rounded-lg overflow-hidden mb-4 border border-gray-200">
+              <div 
+                className="aspect-[3/2] rounded-lg overflow-hidden mb-4 border border-gray-200 cursor-pointer hover:border-gray-400 transition-colors"
+                onClick={() => openLightbox('/images/sports-collage.jpg')}
+              >
                 <Image 
                   src="/images/sports-collage.jpg" 
                   alt="Sports and Interests" 
