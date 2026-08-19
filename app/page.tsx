@@ -147,56 +147,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
-          <div className="flex flex-wrap gap-4 mb-16">
-            <a 
-              href="https://www.linkedin.com/in/profileofajas"
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="px-6 py-3 bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-colors"
-            >
-              CONNECT ON LINKEDIN
-            </a>
-            <a 
-              href="mailto:ajas.muhammed1@gmail.com" 
-              className="px-6 py-3 border border-gray-900 text-gray-900 text-sm font-medium hover:bg-gray-50 transition-colors"
-            >
-              GET IN TOUCH
-            </a>
-            <a 
-              href="/Muhammed_Ajas_Resume.pdf" 
-              download 
-              className="px-6 py-3 border border-gray-900 text-gray-900 text-sm font-medium hover:bg-gray-50 transition-colors"
-            >
-              DOWNLOAD RESUME
-            </a>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex flex-wrap gap-4">
-            <a 
-              href="https://github.com/muhaaju" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="px-6 py-3 border border-gray-900 text-gray-900 text-sm font-medium hover:bg-gray-50 transition-colors"
-            >
-              GITHUB
-            </a>
-            <a 
-              href="mailto:ajas.muhammed1@gmail.com" 
-              className="px-6 py-3 border border-gray-900 text-gray-900 text-sm font-medium hover:bg-gray-50 transition-colors"
-            >
-              EMAIL
-            </a>
-            <a 
-              href="https://www.instagram.com/muhammed_ajas" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="px-6 py-3 border border-gray-900 text-gray-900 text-sm font-medium hover:bg-gray-50 transition-colors"
-            >
-              INSTAGRAM
-            </a>
-          </div>
         </header>
 
         {/* What I Do Section */}
