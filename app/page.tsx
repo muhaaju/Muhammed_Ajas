@@ -467,10 +467,10 @@ export default function Home() {
                 SECURITY / COMPLIANCE / AUTOMATION
               </div>
               <h3 className="text-3xl font-light mb-6">Enterprise Security Automation</h3>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 Automated enterprise security and certificate compliance using HashiCorp Vault APIs for password rotation, audit automation, legacy-credential detection, and full SSL/Kubernetes Secret lifecycle management, preventing certificate-expiration incidents.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-300 leading-relaxed mb-6">
                 Security controls should have an operational lifecycle just like application infrastructure does.
               </p>
               <div className="flex flex-wrap gap-3 text-sm text-gray-600">
@@ -485,15 +485,15 @@ export default function Home() {
 
         {/* Engineering Toolbox Section */}
         <section className="mb-32">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-900 mb-16">ENGINEERING TOOLBOX</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">ENGINEERING TOOLBOX</h2>
           
           <div className="grid md:grid-cols-3 gap-12">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">☁️</span>
-                <h4 className="font-semibold text-gray-900">Cloud Platforms</h4>
+                <h4 className="font-semibold text-gray-100">Cloud Platforms</h4>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-orange-500">▸</span> AWS (EKS, EC2, Lambda, IAM)
                 </li>
@@ -512,9 +512,9 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">🐳</span>
-                <h4 className="font-semibold text-gray-900">Container & Orchestration</h4>
+                <h4 className="font-semibold text-gray-100">Container & Orchestration</h4>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-blue-600">▸</span> Kubernetes
                 </li>
@@ -533,9 +533,9 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">⚙️</span>
-                <h4 className="font-semibold text-gray-900">IaC & Automation</h4>
+                <h4 className="font-semibold text-gray-100">IaC & Automation</h4>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-purple-600">▸</span> Terraform
                 </li>
@@ -554,9 +554,9 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">📊</span>
-                <h4 className="font-semibold text-gray-900">Observability</h4>
+                <h4 className="font-semibold text-gray-100">Observability</h4>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-blue-600">▸</span> Instana
                 </li>
@@ -575,9 +575,9 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">🔒</span>
-                <h4 className="font-semibold text-gray-900">Security & Compliance</h4>
+                <h4 className="font-semibold text-gray-100">Security & Compliance</h4>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-purple-600">▸</span> HashiCorp Vault
                 </li>
@@ -596,9 +596,9 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">🚨</span>
-                <h4 className="font-semibold text-gray-900">SRE & Operations</h4>
+                <h4 className="font-semibold text-gray-100">SRE & Operations</h4>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="text-red-600">▸</span> Incident Management
                 </li>
