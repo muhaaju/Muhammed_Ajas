@@ -667,35 +667,35 @@ export default function Home() {
             <div className="md:col-span-8 space-y-8">
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-xl font-medium mb-3">Progressive Techies Kerala</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Core group member delivering technical sessions on Kubernetes, SRE, Cloud Automation, and DevOps best practices for engineering teams and technical communities. I enjoy sharing practical engineering experiences and turning lessons from production into discussions that other engineers can learn from.
                 </p>
               </div>
 
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-xl font-medium mb-3">DevOps Malayalam Tech Community</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Active moderator fostering technical discussions and knowledge sharing in the regional DevOps community.
                 </p>
               </div>
 
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-xl font-medium mb-3">NGO Career Guidance Program</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Mentor providing career guidance and technical mentorship to aspiring engineers. I enjoy helping early-career engineers understand how to move from learning technology to building practical engineering skills.
                 </p>
               </div>
 
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-xl font-medium mb-3">Panayikulam Public Library</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Secretary supporting community education and literacy initiatives.
                 </p>
               </div>
 
               <div className="border-t border-gray-200 pt-6">
                 <h3 className="text-xl font-medium mb-3">Toastmasters Club</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Active member developing public speaking and leadership skills. Engineering is only part of the job—being able to explain an idea clearly and communicate during difficult situations is equally important.
                 </p>
               </div>
@@ -931,7 +931,7 @@ export default function Home() {
 
         {/* Find Me Online Section */}
         <section className="mb-32">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-900 mb-8">FIND ME ONLINE</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-8">FIND ME ONLINE</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <a 
@@ -943,11 +943,11 @@ export default function Home() {
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">💼</span>
-                  <h3 className="text-xl font-semibold text-gray-900">LinkedIn</h3>
+                  <h3 className="text-xl font-semibold text-gray-100">LinkedIn</h3>
                 </div>
-                <span className="text-gray-500 group-hover:translate-x-1 transition-transform">↗</span>
+                <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 linkedin.com/in/profileofajas
               </p>
             </a>
@@ -961,11 +961,11 @@ export default function Home() {
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">💻</span>
-                  <h3 className="text-xl font-semibold text-gray-900">GitHub</h3>
+                  <h3 className="text-xl font-semibold text-gray-100">GitHub</h3>
                 </div>
-                <span className="text-gray-500 group-hover:translate-x-1 transition-transform">↗</span>
+                <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 github.com/muhaaju
               </p>
             </a>
@@ -979,11 +979,11 @@ export default function Home() {
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">📸</span>
-                  <h3 className="text-xl font-semibold text-gray-900">Instagram</h3>
+                  <h3 className="text-xl font-semibold text-gray-100">Instagram</h3>
                 </div>
-                <span className="text-gray-500 group-hover:translate-x-1 transition-transform">↗</span>
+                <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 instagram.com/muhammed_ajas
               </p>
             </a>
@@ -995,11 +995,11 @@ export default function Home() {
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">✉️</span>
-                  <h3 className="text-xl font-semibold text-gray-900">Email</h3>
+                  <h3 className="text-xl font-semibold text-gray-100">Email</h3>
                 </div>
-                <span className="text-gray-500 group-hover:translate-x-1 transition-transform">↗</span>
+                <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 ajas.muhammed1@gmail.com
               </p>
             </a>
@@ -1007,7 +1007,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="pt-16 border-t border-gray-200 text-sm text-gray-500">
+        <footer className="pt-16 border-t border-gray-200 text-sm text-gray-400">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div>
               <p className="mb-2">© 2026 Muhammed Ajas</p>
