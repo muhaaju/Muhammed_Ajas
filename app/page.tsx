@@ -1,13 +1,32 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 500);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="min-h-screen bg-white text-gray-900 scroll-smooth">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="font-semibold text-lg">MUHAMMED AJAS</div>
+          
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8 text-sm">
             <a href="#about" className="hover:text-gray-600 transition-colors">ABOUT</a>
             <span className="text-gray-300">·</span>
@@ -19,8 +38,79 @@ export default function Home() {
             <span className="text-gray-300">·</span>
             <a href="#beyond" className="hover:text-gray-600 transition-colors">BEYOND</a>
           </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 hover:bg-gray-100 rounded transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {mobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-200 bg-white">
+            <div className="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm">
+              <a 
+                href="#about" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-gray-600 transition-colors py-2"
+              >
+                ABOUT
+              </a>
+              <a 
+                href="#experience" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-gray-600 transition-colors py-2"
+              >
+                EXPERIENCE
+              </a>
+              <a 
+                href="#projects" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-gray-600 transition-colors py-2"
+              >
+                PROJECTS
+              </a>
+              <a 
+                href="#publications" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-gray-600 transition-colors py-2"
+              >
+                THINKING
+              </a>
+              <a 
+                href="#beyond" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-gray-600 transition-colors py-2"
+              >
+                BEYOND
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 p-4 bg-gray-900 text-white rounded-full shadow-lg hover:bg-gray-800 transition-all z-50"
+          aria-label="Scroll to top"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </button>
+      )}
 
       <div className="max-w-5xl mx-auto px-6 pt-32 pb-20">
         
