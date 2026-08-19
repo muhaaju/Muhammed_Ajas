@@ -169,14 +169,12 @@ export default function Home() {
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 My work focuses on turning complex operational problems into reliable engineering solutions. When something repeatedly requires manual intervention, I look for a way to automate it. When a production failure is difficult to understand, I look for better diagnostics and better evidence.
               </p>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed mb-8">
                 Currently at <strong className="text-emerald-400">IBM</strong>, building and improving infrastructure and operational capabilities for Cognos Analytics on Cloud—managing 300+ Kubernetes clusters serving 500+ enterprise customers.
               </p>
-            </div>
-
               
               {/* Terminal Component */}
-              <div className="mt-8 rounded-lg border border-zinc-800 bg-zinc-950/90 shadow-2xl overflow-hidden font-mono text-sm">
+              <div className="rounded-lg border border-zinc-800 bg-zinc-950/90 shadow-2xl overflow-hidden font-mono text-sm">
                 <div className="flex items-center gap-2 px-4 py-2.5 bg-zinc-900/80 border-b border-zinc-800 text-zinc-500 text-xs">
                   <span className="h-3 w-3 rounded-full bg-red-500/80 inline-block"></span>
                   <span className="h-3 w-3 rounded-full bg-yellow-500/80 inline-block"></span>
@@ -192,7 +190,7 @@ export default function Home() {
                   <p className="text-zinc-400">&gt; Kubernetes • AWS • IBM Cloud • Automation • Security</p>
                 </div>
               </div>
-
+            </div>
             <div className="md:col-span-4">
               <div 
                 className="aspect-square rounded-2xl overflow-hidden border border-zinc-800 shadow-lg shadow-emerald-500/10 cursor-pointer hover:border-emerald-500/50 transition-colors"
