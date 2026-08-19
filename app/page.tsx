@@ -440,66 +440,132 @@ export default function Home() {
 
         {/* Engineering Toolbox Section */}
         <section className="mb-32">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">ENGINEERING TOOLBOX</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-900 mb-16">ENGINEERING TOOLBOX</h2>
           
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="font-medium mb-4 text-gray-900">Cloud Platforms</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>AWS (EKS, EC2, Lambda, IAM)</li>
-                <li>IBM Cloud</li>
-                <li>Microsoft Azure</li>
-                <li>Google Cloud Platform</li>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">☁️</span>
+                <h4 className="font-semibold text-gray-900">Cloud Platforms</h4>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center gap-2">
+                  <span className="text-orange-500">▸</span> AWS (EKS, EC2, Lambda, IAM)
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-600">▸</span> IBM Cloud
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-500">▸</span> Microsoft Azure
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-red-500">▸</span> Google Cloud Platform
+                </li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-medium mb-4 text-gray-900">Container & Orchestration</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>Kubernetes</li>
-                <li>Docker & Podman</li>
-                <li>Helm</li>
-                <li>Container Security</li>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🐳</span>
+                <h4 className="font-semibold text-gray-900">Container & Orchestration</h4>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-600">▸</span> Kubernetes
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-500">▸</span> Docker & Podman
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-400">▸</span> Helm
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-gray-600">▸</span> Container Security
+                </li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-medium mb-4 text-gray-900">IaC & Automation</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>Terraform</li>
-                <li>Ansible</li>
-                <li>Jenkins & GitHub Actions</li>
-                <li>Python & Bash</li>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">⚙️</span>
+                <h4 className="font-semibold text-gray-900">IaC & Automation</h4>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center gap-2">
+                  <span className="text-purple-600">▸</span> Terraform
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-red-600">▸</span> Ansible
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-gray-700">▸</span> Jenkins & GitHub Actions
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-600">▸</span> Python & Bash
+                </li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-medium mb-4 text-gray-900">Observability</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>Instana</li>
-                <li>Sysdig</li>
-                <li>IBM Cloud Logs</li>
-                <li>AWS CloudWatch & Splunk</li>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">📊</span>
+                <h4 className="font-semibold text-gray-900">Observability</h4>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-600">▸</span> Instana
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-teal-600">▸</span> Sysdig
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-600">▸</span> IBM Cloud Logs
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-orange-500">▸</span> AWS CloudWatch & Splunk
+                </li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-medium mb-4 text-gray-900">Security & Compliance</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>HashiCorp Vault</li>
-                <li>AWS Secrets Manager</li>
-                <li>IAM & GuardDuty</li>
-                <li>SSL/TLS Management</li>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🔒</span>
+                <h4 className="font-semibold text-gray-900">Security & Compliance</h4>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center gap-2">
+                  <span className="text-purple-600">▸</span> HashiCorp Vault
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-orange-500">▸</span> AWS Secrets Manager
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-orange-600">▸</span> IAM & GuardDuty
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-600">▸</span> SSL/TLS Management
+                </li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-medium mb-4 text-gray-900">SRE & Operations</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>Incident Management</li>
-                <li>Disaster Recovery</li>
-                <li>PagerDuty & ServiceNow</li>
-                <li>ITIL Best Practices</li>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🚨</span>
+                <h4 className="font-semibold text-gray-900">SRE & Operations</h4>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center gap-2">
+                  <span className="text-red-600">▸</span> Incident Management
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-blue-600">▸</span> Disaster Recovery
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-600">▸</span> PagerDuty & ServiceNow
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-purple-600">▸</span> ITIL Best Practices
+                </li>
               </ul>
             </div>
           </div>
@@ -808,20 +874,23 @@ export default function Home() {
 
         {/* Find Me Online Section */}
         <section className="mb-32">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-8">FIND ME ONLINE</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-900 mb-8">FIND ME ONLINE</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <a 
-              href="https://www.linkedin.com/in/muhammedajas-753346109" 
+              href="https://www.linkedin.com/in/profileofajas" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-xl font-medium">LinkedIn</h3>
-                <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">💼</span>
+                  <h3 className="text-xl font-semibold text-gray-900">LinkedIn</h3>
+                </div>
+                <span className="text-gray-500 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 linkedin.com/in/profileofajas
               </p>
             </a>
@@ -833,10 +902,13 @@ export default function Home() {
               className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-xl font-medium">GitHub</h3>
-                <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">💻</span>
+                  <h3 className="text-xl font-semibold text-gray-900">GitHub</h3>
+                </div>
+                <span className="text-gray-500 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 github.com/muhaaju
               </p>
             </a>
@@ -848,10 +920,13 @@ export default function Home() {
               className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-xl font-medium">Instagram</h3>
-                <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">📸</span>
+                  <h3 className="text-xl font-semibold text-gray-900">Instagram</h3>
+                </div>
+                <span className="text-gray-500 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 instagram.com/muhammed_ajas
               </p>
             </a>
@@ -861,10 +936,13 @@ export default function Home() {
               className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-xl font-medium">Email</h3>
-                <span className="text-gray-400 group-hover:translate-x-1 transition-transform">↗</span>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">✉️</span>
+                  <h3 className="text-xl font-semibold text-gray-900">Email</h3>
+                </div>
+                <span className="text-gray-500 group-hover:translate-x-1 transition-transform">↗</span>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 ajas.muhammed1@gmail.com
               </p>
             </a>
