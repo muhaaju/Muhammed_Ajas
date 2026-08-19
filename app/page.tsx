@@ -764,7 +764,7 @@ export default function Home() {
                   id="name"
                   name="name" 
                   required 
-                  className="w-full px-4 py-3 border border-zinc-700 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors"
                 />
               </div>
               
@@ -775,7 +775,7 @@ export default function Home() {
                   id="email"
                   name="email" 
                   required 
-                  className="w-full px-4 py-3 border border-zinc-700 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors"
                 />
               </div>
               
@@ -786,13 +786,13 @@ export default function Home() {
                   name="message" 
                   required 
                   rows={6}
-                  className="w-full px-4 py-3 border border-zinc-700 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors resize-none"
                 ></textarea>
               </div>
               
               <button 
                 type="submit" 
-                className="px-8 py-3 bg-emerald-500 text-zinc-950 text-sm font-medium hover:bg-emerald-400 transition-colors"
+                className="px-8 py-3 bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-colors"
               >
                 SEND MESSAGE
               </button>
@@ -809,7 +809,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/muhammedajas-753346109" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group border-t border-zinc-800 pt-6 hover:border-gray-400 transition-colors"
+              className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-medium">LinkedIn</h3>
@@ -824,7 +824,7 @@ export default function Home() {
               href="https://github.com/muhaaju" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group border-t border-zinc-800 pt-6 hover:border-gray-400 transition-colors"
+              className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-medium">GitHub</h3>
@@ -839,7 +839,7 @@ export default function Home() {
               href="https://www.instagram.com/muhammed_ajas" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group border-t border-zinc-800 pt-6 hover:border-gray-400 transition-colors"
+              className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-medium">Instagram</h3>
@@ -852,7 +852,7 @@ export default function Home() {
 
             <a 
               href="mailto:ajas.muhammed1@gmail.com"
-              className="group border-t border-zinc-800 pt-6 hover:border-gray-400 transition-colors"
+              className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-medium">Email</h3>
