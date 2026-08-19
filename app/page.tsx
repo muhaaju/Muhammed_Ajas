@@ -20,29 +20,29 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-white text-gray-900 scroll-smooth">
+    <main className="min-h-screen bg-zinc-950 text-gray-100 scroll-smooth">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+      <nav className="fixed top-0 left-0 right-0 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800 z-50">
         <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="font-semibold text-lg">MUHAMMED AJAS</div>
+          <div className="font-semibold text-lg text-emerald-400">MUHAMMED AJAS</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8 text-sm">
-            <a href="#about" className="hover:text-gray-600 transition-colors">ABOUT</a>
-            <span className="text-gray-300">·</span>
-            <a href="#experience" className="hover:text-gray-600 transition-colors">EXPERIENCE</a>
-            <span className="text-gray-300">·</span>
-            <a href="#projects" className="hover:text-gray-600 transition-colors">PROJECTS</a>
-            <span className="text-gray-300">·</span>
-            <a href="#publications" className="hover:text-gray-600 transition-colors">THINKING</a>
-            <span className="text-gray-300">·</span>
-            <a href="#beyond" className="hover:text-gray-600 transition-colors">BEYOND</a>
+            <a href="#about" className="hover:text-emerald-400 transition-colors">ABOUT</a>
+            <span className="text-zinc-600">·</span>
+            <a href="#experience" className="hover:text-emerald-400 transition-colors">EXPERIENCE</a>
+            <span className="text-zinc-600">·</span>
+            <a href="#projects" className="hover:text-emerald-400 transition-colors">PROJECTS</a>
+            <span className="text-zinc-600">·</span>
+            <a href="#publications" className="hover:text-emerald-400 transition-colors">THINKING</a>
+            <span className="text-zinc-600">·</span>
+            <a href="#beyond" className="hover:text-emerald-400 transition-colors">BEYOND</a>
           </div>
 
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 hover:bg-gray-100 rounded transition-colors"
+            className="md:hidden p-2 hover:bg-zinc-800 rounded transition-colors"
             aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,40 +57,40 @@ export default function Home() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 bg-white">
+          <div className="md:hidden border-t border-zinc-800 bg-zinc-900">
             <div className="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm">
               <a 
                 href="#about" 
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-gray-600 transition-colors py-2"
+                className="hover:text-emerald-400 transition-colors py-2"
               >
                 ABOUT
               </a>
               <a 
                 href="#experience" 
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-gray-600 transition-colors py-2"
+                className="hover:text-emerald-400 transition-colors py-2"
               >
                 EXPERIENCE
               </a>
               <a 
                 href="#projects" 
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-gray-600 transition-colors py-2"
+                className="hover:text-emerald-400 transition-colors py-2"
               >
                 PROJECTS
               </a>
               <a 
                 href="#publications" 
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-gray-600 transition-colors py-2"
+                className="hover:text-emerald-400 transition-colors py-2"
               >
                 THINKING
               </a>
               <a 
                 href="#beyond" 
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-gray-600 transition-colors py-2"
+                className="hover:text-emerald-400 transition-colors py-2"
               >
                 BEYOND
               </a>
@@ -103,7 +103,7 @@ export default function Home() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 p-4 bg-gray-900 text-white rounded-full shadow-lg hover:bg-gray-800 transition-all z-50"
+          className="fixed bottom-8 right-8 p-4 bg-emerald-500 text-zinc-950 rounded-full shadow-lg shadow-emerald-500/20 hover:bg-emerald-400 hover:shadow-emerald-500/40 transition-all z-50"
           aria-label="Scroll to top"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,24 +118,24 @@ export default function Home() {
         <header className="mb-32" id="about">
           <div className="grid md:grid-cols-12 gap-12 items-start mb-12">
             <div className="md:col-span-8">
-              <h1 className="text-6xl md:text-7xl font-light mb-8 leading-tight">
+              <h1 className="text-6xl md:text-7xl font-light mb-8 leading-tight text-white">
                 Muhammed Ajas
               </h1>
-              <p className="text-2xl md:text-3xl text-gray-600 font-light mb-8 leading-relaxed">
+              <p className="text-2xl md:text-3xl text-emerald-400 font-light mb-8 leading-relaxed">
                 I build reliable systems, automate the difficult parts, and make production engineering better.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                I'm a <strong>Senior Site Reliability Engineer and Cloud Architect</strong> working across cloud infrastructure, Kubernetes, automation, observability, security, and production reliability.
+              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                I'm a <strong className="text-emerald-400">Senior Site Reliability Engineer and Cloud Architect</strong> working across cloud infrastructure, Kubernetes, automation, observability, security, and production reliability.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 My work focuses on turning complex operational problems into reliable engineering solutions. When something repeatedly requires manual intervention, I look for a way to automate it. When a production failure is difficult to understand, I look for better diagnostics and better evidence.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Currently at <strong>IBM</strong>, building and improving infrastructure and operational capabilities for Cognos Analytics on Cloud—managing 300+ Kubernetes clusters serving 500+ enterprise customers.
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Currently at <strong className="text-emerald-400">IBM</strong>, building and improving infrastructure and operational capabilities for Cognos Analytics on Cloud—managing 300+ Kubernetes clusters serving 500+ enterprise customers.
               </p>
             </div>
             <div className="md:col-span-4">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-gray-200">
+              <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-800 shadow-lg shadow-emerald-500/10">
                 <Image 
                   src="/images/profile-main.jpg" 
                   alt="Muhammed Ajas" 
@@ -764,7 +764,7 @@ export default function Home() {
                   id="name"
                   name="name" 
                   required 
-                  className="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors"
+                  className="w-full px-4 py-3 border border-zinc-700 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors"
                 />
               </div>
               
@@ -775,7 +775,7 @@ export default function Home() {
                   id="email"
                   name="email" 
                   required 
-                  className="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors"
+                  className="w-full px-4 py-3 border border-zinc-700 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors"
                 />
               </div>
               
@@ -786,13 +786,13 @@ export default function Home() {
                   name="message" 
                   required 
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-zinc-700 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 outline-none transition-colors resize-none"
                 ></textarea>
               </div>
               
               <button 
                 type="submit" 
-                className="px-8 py-3 bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-colors"
+                className="px-8 py-3 bg-emerald-500 text-zinc-950 text-sm font-medium hover:bg-emerald-400 transition-colors"
               >
                 SEND MESSAGE
               </button>
@@ -809,7 +809,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/muhammedajas-753346109" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
+              className="group border-t border-zinc-800 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-medium">LinkedIn</h3>
@@ -824,7 +824,7 @@ export default function Home() {
               href="https://github.com/muhaaju" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
+              className="group border-t border-zinc-800 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-medium">GitHub</h3>
@@ -839,7 +839,7 @@ export default function Home() {
               href="https://www.instagram.com/muhammed_ajas" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
+              className="group border-t border-zinc-800 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-medium">Instagram</h3>
@@ -852,7 +852,7 @@ export default function Home() {
 
             <a 
               href="mailto:ajas.muhammed1@gmail.com"
-              className="group border-t border-gray-200 pt-6 hover:border-gray-400 transition-colors"
+              className="group border-t border-zinc-800 pt-6 hover:border-gray-400 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-medium">Email</h3>
