@@ -193,7 +193,7 @@ export default function Home() {
 
         {/* What I Do Section */}
         <section className="mb-32">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">WHAT I DO</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">WHAT I DO</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border-t border-gray-200 pt-6">
@@ -281,7 +281,7 @@ export default function Home() {
 
         {/* Work Experience Section with Second Profile Photo */}
         <section className="mb-32" id="experience">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">WORK EXPERIENCE</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">WORK EXPERIENCE</h2>
           
           <div className="grid md:grid-cols-12 gap-12">
             <div className="md:col-span-8 space-y-16">
@@ -396,7 +396,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <section className="mb-32" id="projects">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">PROJECTS</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">PROJECTS</h2>
           
           <div className="space-y-12">
             <div className="border-t border-gray-200 pt-12">
@@ -618,7 +618,7 @@ export default function Home() {
 
         {/* Certifications Section */}
         <section className="mb-32" id="certifications">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">CERTIFICATIONS</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">CERTIFICATIONS</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border-t border-gray-200 pt-6">
@@ -661,7 +661,7 @@ export default function Home() {
 
         {/* Community Section with Inline Photo */}
         <section className="mb-32">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">COMMUNITY</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">COMMUNITY</h2>
           
           <div className="grid md:grid-cols-12 gap-12 mb-8">
             <div className="md:col-span-8 space-y-8">
@@ -720,7 +720,7 @@ export default function Home() {
 
         {/* Writing & Ideas Section */}
         <section className="mb-32" id="publications">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">WRITING & IDEAS</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">WRITING & IDEAS</h2>
           
           <div className="border-t border-gray-200 pt-12">
             <div className="mb-4 text-xs tracking-wider text-gray-500">
@@ -751,7 +751,7 @@ export default function Home() {
 
         {/* Engineering Philosophy Section */}
         <section className="mb-32">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">ENGINEERING PHILOSOPHY</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">ENGINEERING PHILOSOPHY</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
@@ -806,7 +806,7 @@ export default function Home() {
 
         {/* Beyond the Screen Section with Photo Collages */}
         <section className="mb-32" id="beyond">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-8">BEYOND THE SCREEN</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-8">BEYOND THE SCREEN</h2>
           
           <blockquote className="text-2xl md:text-3xl font-light text-gray-600 mb-8 italic border-l-2 border-gray-300 pl-8">
             "There is more to me than technology."
@@ -878,7 +878,7 @@ export default function Home() {
 
         {/* Contact Form Section */}
         <section className="mb-32">
-          <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-8">LET'S CONNECT</h2>
+          <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-8">LET'S CONNECT</h2>
           
           <div className="max-w-2xl">
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
