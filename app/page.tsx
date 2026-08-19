@@ -173,6 +173,26 @@ export default function Home() {
                 Currently at <strong className="text-emerald-400">IBM</strong>, building and improving infrastructure and operational capabilities for Cognos Analytics on Cloud—managing 300+ Kubernetes clusters serving 500+ enterprise customers.
               </p>
             </div>
+
+              
+              {/* Terminal Component */}
+              <div className="mt-8 rounded-lg border border-zinc-800 bg-zinc-950/90 shadow-2xl overflow-hidden font-mono text-sm">
+                <div className="flex items-center gap-2 px-4 py-2.5 bg-zinc-900/80 border-b border-zinc-800 text-zinc-500 text-xs">
+                  <span className="h-3 w-3 rounded-full bg-red-500/80 inline-block"></span>
+                  <span className="h-3 w-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                  <span className="h-3 w-3 rounded-full bg-green-500/80 inline-block"></span>
+                  <span className="ml-2 text-zinc-400">bash — session: sre-architect</span>
+                </div>
+                <div className="p-5 space-y-2 text-zinc-300">
+                  <p><span className="text-emerald-400">$</span> whoami</p>
+                  <p className="text-zinc-400">&gt; Senior Site Reliability Engineer & Multi-Cloud Architect</p>
+                  <p><span className="text-emerald-400">$</span> systemctl status availability</p>
+                  <p className="text-emerald-400">● active (running) — 99.99% multi-tenant uptime</p>
+                  <p><span className="text-emerald-400">$</span> cat /proc/expertise</p>
+                  <p className="text-zinc-400">&gt; Kubernetes • AWS • IBM Cloud • Automation • Security</p>
+                </div>
+              </div>
+
             <div className="md:col-span-4">
               <div 
                 className="aspect-square rounded-2xl overflow-hidden border border-zinc-800 shadow-lg shadow-emerald-500/10 cursor-pointer hover:border-emerald-500/50 transition-colors"
@@ -754,7 +774,7 @@ export default function Home() {
           <h2 className="text-sm font-semibold tracking-wider text-gray-200 mb-16">ENGINEERING PHILOSOPHY</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+            <div className="border border-zinc-800 bg-zinc-900/40 p-8 rounded-lg transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)] hover:-translate-y-0.5">
               <div className="text-4xl mb-4">🔧</div>
               <h3 className="text-xl font-semibold mb-4">Reliability is engineered, not monitored into existence</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -762,7 +782,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+            <div className="border border-zinc-800 bg-zinc-900/40 p-8 rounded-lg transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)] hover:-translate-y-0.5">
               <div className="text-4xl mb-4">⚙️</div>
               <h3 className="text-xl font-semibold mb-4">Automate the operational knowledge</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -770,7 +790,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+            <div className="border border-zinc-800 bg-zinc-900/40 p-8 rounded-lg transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)] hover:-translate-y-0.5">
               <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-xl font-semibold mb-4">Preserve evidence</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -778,7 +798,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+            <div className="border border-zinc-800 bg-zinc-900/40 p-8 rounded-lg transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)] hover:-translate-y-0.5">
               <div className="text-4xl mb-4">📊</div>
               <h3 className="text-xl font-semibold mb-4">Make complexity understandable</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -786,7 +806,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+            <div className="border border-zinc-800 bg-zinc-900/40 p-8 rounded-lg transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)] hover:-translate-y-0.5">
               <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-xl font-semibold mb-4">Automate with purpose</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -794,7 +814,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+            <div className="border border-zinc-800 bg-zinc-900/40 p-8 rounded-lg transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)] hover:-translate-y-0.5">
               <div className="text-4xl mb-4">📚</div>
               <h3 className="text-xl font-semibold mb-4">Keep learning</h3>
               <p className="text-gray-600 leading-relaxed">
