@@ -639,44 +639,50 @@ export default function Home() {
         <section className="mb-32">
           <h2 className="text-sm font-semibold tracking-wider text-gray-400 mb-16">ENGINEERING PHILOSOPHY</h2>
           
-          <div className="space-y-12">
-            <div className="border-t border-gray-200 pt-8">
-              <h3 className="text-xl font-medium mb-4">Reliability is engineered, not monitored into existence.</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+              <div className="text-4xl mb-4">🔧</div>
+              <h3 className="text-xl font-semibold mb-4">Reliability is engineered, not monitored into existence</h3>
               <p className="text-gray-600 leading-relaxed">
                 Monitoring can tell you that something is wrong. Reliability engineering asks: Why did it happen? How do we recover safely? How do we prevent it from happening again?
               </p>
             </div>
 
-            <div className="border-t border-gray-200 pt-8">
-              <h3 className="text-xl font-medium mb-4">Automate the operational knowledge.</h3>
+            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+              <div className="text-4xl mb-4">⚙️</div>
+              <h3 className="text-xl font-semibold mb-4">Automate the operational knowledge</h3>
               <p className="text-gray-600 leading-relaxed">
                 If engineers repeatedly perform the same investigation, recovery process, or configuration task, there is an opportunity to turn that knowledge into software.
               </p>
             </div>
 
-            <div className="border-t border-gray-200 pt-8">
-              <h3 className="text-xl font-medium mb-4">Preserve evidence.</h3>
+            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+              <div className="text-4xl mb-4">🔍</div>
+              <h3 className="text-xl font-semibold mb-4">Preserve evidence</h3>
               <p className="text-gray-600 leading-relaxed">
                 A recovery that destroys the evidence needed for diagnosis can make the next failure harder to understand. Good operational systems should make investigation easier, not harder.
               </p>
             </div>
 
-            <div className="border-t border-gray-200 pt-8">
-              <h3 className="text-xl font-medium mb-4">Make complexity understandable.</h3>
+            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+              <div className="text-4xl mb-4">📊</div>
+              <h3 className="text-xl font-semibold mb-4">Make complexity understandable</h3>
               <p className="text-gray-600 leading-relaxed">
                 Infrastructure can become complicated very quickly. Good engineering is not only about building sophisticated systems—it is also about creating the tools, documentation, automation, and observability that allow humans to understand those systems.
               </p>
             </div>
 
-            <div className="border-t border-gray-200 pt-8">
-              <h3 className="text-xl font-medium mb-4">Automate with purpose.</h3>
+            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-xl font-semibold mb-4">Automate with purpose</h3>
               <p className="text-gray-600 leading-relaxed">
                 Automation isn't about removing humans from every process. It is about removing repetitive work so engineers can spend their time on problems that actually require engineering judgment.
               </p>
             </div>
 
-            <div className="border-t border-gray-200 pt-8">
-              <h3 className="text-xl font-medium mb-4">Keep learning.</h3>
+            <div className="border border-gray-200 p-8 hover:border-gray-400 transition-colors">
+              <div className="text-4xl mb-4">📚</div>
+              <h3 className="text-xl font-semibold mb-4">Keep learning</h3>
               <p className="text-gray-600 leading-relaxed">
                 Cloud platforms evolve. Kubernetes evolves. Automation evolves. AI is changing how we think about infrastructure operations. The tools will change. The willingness to learn should not.
               </p>
@@ -707,7 +713,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h4 className="font-medium mb-3">World Traveller</h4>
+              <h4 className="font-medium mb-3">Travel Enthusiast</h4>
               <p className="text-gray-600 leading-relaxed">
                 Exploring diverse landscapes and cultures across the globe. For me, travelling isn't simply about visiting destinations—it's about experiencing different cultures, meeting people, and seeing the world from a different point of view.
               </p>
